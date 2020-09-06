@@ -1,0 +1,120 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    padding: 0;
+    top: 50%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: 100%;
+}
+
+.container {
+    text-align: center;
+    font-size: 25px;
+    transition: 0.3s;
+    border-radius: 5px;
+    padding: 4px;
+}
+
+#texto:before {
+    content: "Pellentesque habitant morbi tristique senectus";
+}
+
+/*   
+    border-radius: 5px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    
+    color: rgb(19, 16, 16); */
+
+
+
+
+.cards {
+    display: -ms-grid;
+    display: grid;
+    grid-gap: 55px;
+    max-width: 1000px;
+    margin: 1em auto;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    -ms-grid-columns: 100px 100px 100px;
+    padding: 2 0px;
+}
+
+
+.card {
+    display: -ms-grid;
+    -ms-grid-rows: -webkit-max-content 200px 2fr;
+    -ms-grid-rows: max-content 200px 2fr;
+    grid-template-rows: -webkit-max-content 200px 2fr;
+    grid-template-rows: max-content 200px 2fr;
+    border: 1px solid #999;
+    border-radius: 3px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background: rgb(221, 220, 220);
+}
+.item1{
+    grid-template-columns: minmax(250px, 1fr);
+    -ms-grid-column:1;
+}
+.item2{
+    grid-template-columns: minmax(250px, 1fr);
+    -ms-grid-column:2;
+}
+
+.item3{
+    grid-template-columns: minmax(250px, 1fr);
+    -ms-grid-column:3;
+}
+.card-img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.card h4 {
+    margin: 0;
+    padding: .5rem;
+}
+
+.card .card_info {
+    padding: .5rem;
+    background: rgb(221, 220, 220);
+}
+
+.link_learn {
+    color: black;
+    padding: .2rem;
+    background: rgb(221, 220, 220);
+}
+
+
+
+
+@media screen and (max-width: 600px) {
+    .card {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+        margin: 0%;
+        background: rgb(221, 220, 220);
+    }
+
+    .container h1 {
+
+        margin: 0px;
+        padding: 0px;
+    }
+    #texto:before {
+        content: "Resources for Employers";
+    }
+
+
+}
