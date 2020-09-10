@@ -13,10 +13,8 @@
   margin-right: 150px;
 
 }
-
-
   button  {
-   position: relative;
+  /*  position: relative; */
    margin-left:97%;
    margin-right: 35%;
    background-color: #3498DB;

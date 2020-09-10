@@ -1,4 +1,4 @@
-  $("button").click(function (event) {
+  $(function(){$("button").click(function (event) {
       var elem = $(this.parentNode.childNodes[9]);
 
       if (elem.hasClass("active")) {
@@ -11,4 +11,5 @@
           $(elem).addClass("active");
           $(elem).show();
       }
+    })
   });
