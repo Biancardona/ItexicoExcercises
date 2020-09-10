@@ -1,0 +1,46 @@
+*
+body {
+    top: 50%;
+    font-family: Arial, Helvetica, sans-serif;
+    margin:0px;
+}
+
+.title {
+    text-align: center;
+    font-size: 25px;
+    transition: 0.3s;
+    padding: 4px;
+    margin-left: 100px; 
+    margin-right: 150px;
+}
+select{
+background:blue;
+margin: 40px;
+}
+.custom-select{
+    position:relative;
+    left:11%; 
+    right:15%;
+    min-width: 100%;
+}
+select:focus {
+    min-width: 150px;
+    width: auto;
+}
+
+
+
+/*.custom-select select {
+    display: none; hide original SELECT element:*/
+  
+  /*style the arrow inside the select element:*/
+.select-selected:after {
+    position: absolute;
+    content: "";
+    top: 14px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: #fff transparent transparent transparent;
+  }
