@@ -1,0 +1,133 @@
+* body {
+    top: 50%;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    box-sizing: border-box;
+   
+  }
+  
+  .title {
+    text-align: center;
+    font-size: 25px;
+    padding: 4px;
+    margin-left: 100px;
+    margin-right: 150px;
+  
+  }
+  h3 {
+    font-size: 26px;
+  }
+  .container{
+    align-items:center;
+/*     justify-content: center; */
+    height: 50vh;
+    padding: 80px;
+   
+  }
+  .card-container{
+    display:flex;
+    background: #fff;
+    height: 250px;
+    box-sizing: border-box;
+
+  }
+  .description{
+
+    border:1px solid #dcdcde;
+    width: 55%;
+  
+  }
+  .content{
+    padding: 18px;
+    width: 70%;
+    float:left;
+    height: 5%;
+    line-height: 1.4em; 
+    letter-spacing: 2px;
+    position: relative;
+  }
+  .header.description{
+    flex:auto;
+    padding:50px;
+
+  }
+  .header{
+    width: 55%;
+    background-color: rgb(15 152 179);
+    background-color: rgba(15, 152, 179, 2);
+  }
+  .header img {
+    position:relative;
+    display:block;
+    flex:auto;
+    float: right;
+    height: 100%;
+ 
+  }
+  
+  span{
+    box-sizing: border-box;
+  
+  }
+  .button-orange{
+    border: 2px solid #e36f1e;
+    color: #e36f1e;
+    padding: 8px 20px;
+    border-radius:22px;
+    float: right;
+    margin: 20px 20px 0 0;
+  }
+  @media(max-width:640px){
+    .card-container{
+    display: block;
+    }
+    .content{
+      float: none;
+      width: 100%;
+      padding:0px;
+    }
+    .header{
+      width: auto;
+      height: 100%;
+    }
+    .description{
+      width: 100%;
+      margin-bottom: 20px;
+    }
+
+    .container{
+      align-items:center;
+      height: 20vh;
+   
+    }
+    .button-orange{
+      float:none;
+    }
+  }
+  @media(max-width:880px){
+    .card-container{
+      display: block;
+      }
+      .header{
+        width: auto;
+        height: 100%;
+      }
+      .description{
+        width: 100%;
+      }
+      .content{
+        float: none;
+        width: 100%;
+        padding:0px;
+      }
+      .container{
+        align-items:center;
+        height: 25vh;
+        position: absolute;
+      }
+      .button-orange{
+        float:none;
+      }
+   
+    }
+
