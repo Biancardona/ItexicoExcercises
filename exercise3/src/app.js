@@ -1,5 +1,5 @@
   $(function(){$("button").click(function (event) {
-      var elem = $(this.parentNode.childNodes[11]);
+      var elem = $(this.parentNode.childNodes[7]);
       $(".fa-angle-up").addClass("fa-angle-down");
       $(".fa-angle-up").removeClass("fa-angle-up");
       if (elem.hasClass("active")) {
